@@ -1,0 +1,20 @@
+/* card-list.page.scss */
+ion-thumbnail.card-thumbnail {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+ion-label.card-details {
+  ion-label.card-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+
+  ion-label.card-description {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}

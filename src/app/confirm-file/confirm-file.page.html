@@ -1,0 +1,30 @@
+<!-- other-page.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Other Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <ion-img src="assets/images/image.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>This is a card example with an image and text.</p>
+    </ion-card-content>
+    <ion-row justify-content-center>
+      <ion-col>
+        <ion-button expand="block" color="success"  (click)="confirm()">change</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-col>
+        <ion-button expand="block" (click)="confirm()">Confirm</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

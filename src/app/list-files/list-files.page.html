@@ -1,0 +1,22 @@
+<!-- card-list.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Card List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of cardItems" [routerLink]="['/detail', item.id]" lines="none">
+      <ion-thumbnail slot="start" class="card-thumbnail">
+        <ion-img [src]="item.image"></ion-img>
+      </ion-thumbnail>
+      <ion-label class="card-details">
+        <h2 class="card-title">{{ item.title }}</h2>
+        <p class="card-description">{{ item.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

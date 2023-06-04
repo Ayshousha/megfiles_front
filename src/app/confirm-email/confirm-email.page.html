@@ -1,0 +1,25 @@
+<!-- confirm-email.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Confirm Email
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="!confirmed">
+    <ion-card-content>
+      <h2>Confirm your email</h2>
+      <p>A confirmation email has been sent to your registered email address. Please click the confirmation link to activate your account.</p>
+      <button ion-button (click)="checkConfirmation()">Check Confirmation</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="confirmed">
+    <ion-card-content>
+      <h2>Email Confirmed!</h2>
+      <p>Your email has been successfully confirmed.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "megfiles",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,26 @@
+.form-login {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-col {
+  text-align: center;
+}
+
+ion-item {
+  margin-bottom: 16px;
+}
+
+ion-button {
+  margin-top: 16px;
+}
+ion-content {
+
+
+}
+body{
+  --background: url('https://images.unsplash.com/photo-1554189097-ffe88e998a2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+}
+
