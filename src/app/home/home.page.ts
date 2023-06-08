@@ -18,4 +18,16 @@ export class HomePage {
     });
 
   }
+  sendPic() {
+    this.photoService.sendPhoto(this.image).subscribe({
+      next: (response: any) => {
+        // Handle the successful response here
+        console.log(response);
+      },
+      error: (error: any) => {
+        // Handle the error here
+        console.error(error);
+      }
+    });
+  }
 }

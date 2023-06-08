@@ -27,4 +27,7 @@ export class PhotoService {
 
     return Promise.resolve('');
   }
+  sendPhoto(data:any):any{
+    this.http.post("http://localhost:8000/send/doc" , data)
+  }
 }

@@ -2,7 +2,8 @@ import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Toast } from '@capacitor/toast';
+import { ToastrService } from 'ngx-toastr';
+
 
 
 
@@ -15,7 +16,7 @@ export class LoginPage implements OnInit {
 
   loginForm!: FormGroup
 
-  constructor(private router:Router , private formBuilder: FormBuilder  , private AuthService:AuthService) {}
+  constructor(private router:Router , private formBuilder: FormBuilder  , private AuthService:AuthService , private toastr: ToastrService) {}
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
@@ -38,6 +39,8 @@ export class LoginPage implements OnInit {
       error:(error: any) => {
         // Handle any error that occurs during the login process
         // You can access the error details using the 'error' parameter
+        this.toastr.success('Hello, World!', 'Toast Title');
+
 
 
 

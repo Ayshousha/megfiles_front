@@ -64,7 +64,7 @@
   <img [src]="image" class="rounded-image" />
 </ion-row>
 <ion-row class="ion-justify-content-center" *ngIf="image">
-  <ion-button color ="primary" class="ion-margin">
+  <ion-button color ="primary" class="ion-margin" (click)="sendPic()">
  send  Document
  <ion-icon slot="end" name="send"></ion-icon>
   </ion-button>
