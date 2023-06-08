@@ -16,28 +16,33 @@
         <form (ngSubmit)="signup()" [formGroup]="signupForm">
           <ion-item>
             <ion-label position="floating">Name</ion-label>
+            <ion-icon slot="start" name="person"></ion-icon>
             <ion-input formControlName="name" type="text"></ion-input>
           </ion-item>
-
+        
           <ion-item>
             <ion-label position="floating">Email</ion-label>
+            <ion-icon slot="start" name="mail"></ion-icon>
             <ion-input formControlName="email" type="email"></ion-input>
           </ion-item>
-
+        
           <ion-item>
             <ion-label position="floating">Password</ion-label>
+            <ion-icon slot="start" name="lock-closed"></ion-icon>
             <ion-input formControlName="password" type="password"></ion-input>
           </ion-item>
-
+        
           <ion-item>
             <ion-label position="floating">Confirm Password</ion-label>
+            <ion-icon slot="start" name="lock-closed"></ion-icon>
             <ion-input formControlName="confirmPassword" type="password"></ion-input>
           </ion-item>
-
+        
           <div class="button-container">
             <ion-button expand="full" type="submit" color="success" [disabled]="signupForm.invalid">Sign Up</ion-button>
           </div>
         </form>
+        
       </ion-col>
     </ion-row>
   </ion-grid>

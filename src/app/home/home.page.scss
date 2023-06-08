@@ -25,3 +25,7 @@
 #container a {
   text-decoration: none;
 }
+.rounded-image {
+  border: 1px solid gray; /* Add border properties */
+  border-radius: 20px; /* Make the image rounded */
+}

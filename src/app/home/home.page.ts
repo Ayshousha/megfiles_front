@@ -8,11 +8,14 @@ import { PhotoService } from '../services/photo.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  image : any 
   constructor(public photoService: PhotoService) { }
   addPhotoToGallery() {
 
-    this.photoService.addNewToGallery();
+    this.photoService.addNewToGallery().then((imageDataURL) => {
+      this.image = imageDataURL;
+      console.log(imageDataURL)
+    });
 
   }
 }
